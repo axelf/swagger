@@ -1,0 +1,23 @@
+{
+  "name": "swagger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "swagger": "(sleep 2 && open http://localhost:3001/?url=http://localhost:3001/spec) & node app.js",
+    "start": "node_modules/.bin/nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "swagger-ui-dist": "^3.17.5",
+    "swagger-ui-express": "^3.0.10",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
